@@ -19,6 +19,8 @@ import Paragraph from "./components/Paragraph.vue";
 import Form from "./components/Form.vue";
 import FormField from "./components/FormField.vue";
 import MainFooter from "./components/MainFooter.vue";
+import BlogPost from "./components/BlogPost.vue";
+import BlogPostList from "./components/BlogPostList.vue";
 //Import config
 import { storyBlokAccessToken } from '../storyblokaccess';
 const app = createApp(App)
@@ -49,6 +51,8 @@ app.component("Paragraph", Paragraph);
 app.component("Form", Form);
 app.component("FormField", FormField);
 app.component("MainFooter", MainFooter);
+app.component("BlogPost", BlogPost);
+app.component("BlogPostList", BlogPostList);
 
 app.use(StoryblokVue, {
     accessToken: storyBlokAccessToken,
