@@ -15,6 +15,7 @@ import PageTitle from "./components/PageTitle.vue";
 import MainMenu from "./components/MainMenu.vue";
 import Link from "./components/Link.vue";
 import Paragraph from "./components/Paragraph.vue";
+import Form from "./components/Form.vue";
 //Import config
 import { storyBlokAccessToken } from '../storyblokaccess';
 const app = createApp(App)
@@ -41,6 +42,7 @@ app.component("PageTitle", PageTitle);
 app.component("MainMenu", MainMenu);
 app.component("Link", Link);
 app.component("Paragraph", Paragraph);
+app.component("Form", Form);
 
 app.use(StoryblokVue, {
     accessToken: storyBlokAccessToken,
