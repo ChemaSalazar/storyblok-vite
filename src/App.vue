@@ -8,6 +8,7 @@ import { RouterLink, RouterView } from "vue-router"
     <div class="wrapper">
       <nav class="flex-auto px-6">
         <RouterLink class="p-3" to="/">Home</RouterLink>
+        <RouterLink class="p-3" to="/blog">Blog</RouterLink>
         <RouterLink class="p-3" to="/contact">Contact</RouterLink>
       </nav>
     </div>

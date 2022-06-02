@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import {createRouter, createWebHistory} from "vue-router";
 import Home from "./pages/Home.vue"
+import Blog from "./pages/Blog.vue"
 import Contact from "./pages/Contact.vue"
 import { StoryblokVue, apiPlugin } from '@storyblok/vue';
 //Import components
@@ -17,12 +18,14 @@ import Link from "./components/Link.vue";
 import Paragraph from "./components/Paragraph.vue";
 import Form from "./components/Form.vue";
 import FormField from "./components/FormField.vue";
+import MainFooter from "./components/MainFooter.vue";
 //Import config
 import { storyBlokAccessToken } from '../storyblokaccess';
 const app = createApp(App)
 
 const routes = [
     {path: '/', component: Home},
+    {path: '/blog', component: Blog},
     {path: '/contact', component: Contact},
 
 ]
@@ -45,6 +48,7 @@ app.component("Link", Link);
 app.component("Paragraph", Paragraph);
 app.component("Form", Form);
 app.component("FormField", FormField);
+app.component("MainFooter", MainFooter);
 
 app.use(StoryblokVue, {
     accessToken: storyBlokAccessToken,
