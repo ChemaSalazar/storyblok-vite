@@ -1,8 +1,4 @@
 <script setup>
-// import Home from './pages/Home.vue';
-// import Page from './components/Page.vue';
-// import Home from "./pages/Home.vue";
-// import Contact from "./pages/Contact.vue";
 import { RouterLink, RouterView } from "vue-router"
 </script>
 
@@ -10,9 +6,9 @@ import { RouterLink, RouterView } from "vue-router"
 <template>
   <header>
     <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
+      <nav class="flex-auto px-6">
+        <RouterLink class="p-3" to="/">Home</RouterLink>
+        <RouterLink class="p-3" to="/contact">Contact</RouterLink>
       </nav>
     </div>
   </header>
